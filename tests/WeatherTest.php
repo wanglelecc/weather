@@ -137,5 +137,21 @@ class WeatherTest extends TestCase
         
         $w->getWeather('北京');
     }
+
+    public function testGetLiveWeather()
+    {
+        $w = \Mockery::mock(Weather::class, [$this->key])->makePartial();
+        $w->expects()->getWeather('北京', 'base', 'json')->andReturn(['success'=>true]);
+
+        $this->assertSame(['success' => true], $w->getLiveWeather('北京'));
+    }
+
+    public function testGetForecastsWeather()
+    {
+        $w = \Mockery::mock(Weather::class, [$this->key])->makePartial();
+        $w->expects()->getWeather('北京', 'all', 'json')->andReturn(['success' => true]);
+
+        $this->assertSame(['success' => true], $w->getForecastsWeather('北京'));
+    }
     
 }
