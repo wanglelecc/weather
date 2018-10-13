@@ -1,15 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lele.wang
- * Date: 2018/10/12
- * Time: 15:14
+
+/*
+ * This file is part of the wanglelecc/weather.
+ *
+ * (c) wanglele <wanglelecc@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Wanglelecc\Weather\Exceptions;
 
-
 class HttpException extends Exception
 {
-    
 }
