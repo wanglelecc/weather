@@ -56,10 +56,28 @@ class Weather
         
     }
 
+    /**
+     * 获取实时天气
+     *
+     * @param $city
+     * @param string $format
+     * @return mixed
+     * @throws HttpException
+     * @throws InvalidArgumentException
+     */
     public function getLiveWeather($city, $format = 'json'){
         return $this->getWeather($city, 'base', $format);
     }
 
+    /**
+     * 获取全部天气
+     *
+     * @param $city
+     * @param string $format
+     * @return mixed
+     * @throws HttpException
+     * @throws InvalidArgumentException
+     */
     public function getForecastsWeather($city, $format = 'json'){
         return $this->getWeather($city, 'all', $format);
     }
