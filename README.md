@@ -4,7 +4,7 @@
 
 
 [![Build Status](https://travis-ci.org/wanglelecc/weather.svg?branch=master)](https://travis-ci.org/wanglelecc/weather)
-
+[![StyleCI build status](https://github.styleci.io/repos/152737755/shield)](https://github.styleci.io/)
 
 ## Installing
 
